@@ -1,0 +1,197 @@
+{
+ "window": [
+  "2019-08-21 07:40:00",
+  "2019-08-21 07:45:00"
+ ],
+ "baseline": [
+  "2019-05-23 07:40:00",
+  "2019-08-21 07:40:00"
+ ],
+ "funnel": {
+  "window_events": 1256,
+  "baseline_events": 114016,
+  "window_actors": 2,
+  "actors_with_signal": 2,
+  "candidates_sent": 2
+ },
+ "candidates": [
+  {
+   "actor": "arn:aws:iam::811596193553:user/Level6",
+   "id_type": "IAMUser",
+   "n": 662,
+   "hrs": 1,
+   "max_hour": 662,
+   "ips": 1,
+   "regions": 3,
+   "events": 12,
+   "denied": 232,
+   "ok": 34,
+   "first": "2019-08-21 07:41:17",
+   "last": "2019-08-21 07:44:59",
+   "first_seen": {
+    "event": [
+     {
+      "value": "CreateDefaultVpc",
+      "count": 6,
+      "first": "2019-08-21 07:41:25"
+     },
+     {
+      "value": "DeleteAccessKey",
+      "count": 2,
+      "first": "2019-08-21 07:41:22"
+     },
+     {
+      "value": "CreateUser",
+      "count": 2,
+      "first": "2019-08-21 07:41:22"
+     }
+    ],
+    "ip": [
+     {
+      "value": "5.205.62.253",
+      "count": 662,
+      "first": "2019-08-21 07:41:17"
+     }
+    ],
+    "user_agent": [
+     {
+      "value": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201",
+      "count": 660,
+      "first": "2019-08-21 07:41:17"
+     },
+     {
+      "value": "[Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201]",
+      "count": 2,
+      "first": "2019-08-21 07:44:57"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "DeleteAccessKey x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "CreateUser x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "5.205.62.253 x662"
+    },
+    {
+     "type": "first_seen_event:other",
+     "score": 40,
+     "detail": "CreateDefaultVpc x6 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore x660"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "[Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocor x2"
+    }
+   ],
+   "score": 90,
+   "score_sum": 315,
+   "baseline": {
+    "n": 71096,
+    "hrs": 307,
+    "p95_hour": 8412.0,
+    "max_hour": 8412,
+    "ips": 191,
+    "denied": 18354
+   }
+  },
+  {
+   "actor": "arn:aws:iam::811596193553:user/backup",
+   "id_type": "IAMUser",
+   "n": 594,
+   "hrs": 1,
+   "max_hour": 594,
+   "ips": 1,
+   "regions": 3,
+   "events": 11,
+   "denied": 214,
+   "ok": 30,
+   "first": "2019-08-21 07:41:24",
+   "last": "2019-08-21 07:44:59",
+   "first_seen": {
+    "event": [
+     {
+      "value": "CreateDefaultVpc",
+      "count": 6,
+      "first": "2019-08-21 07:41:30"
+     },
+     {
+      "value": "DeleteAccessKey",
+      "count": 2,
+      "first": "2019-08-21 07:41:26"
+     },
+     {
+      "value": "CreateUser",
+      "count": 2,
+      "first": "2019-08-21 07:41:26"
+     }
+    ],
+    "ip": [
+     {
+      "value": "5.205.62.253",
+      "count": 594,
+      "first": "2019-08-21 07:41:24"
+     }
+    ],
+    "user_agent": [
+     {
+      "value": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201",
+      "count": 594,
+      "first": "2019-08-21 07:41:24"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "DeleteAccessKey x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "CreateUser x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "5.205.62.253 x594"
+    },
+    {
+     "type": "first_seen_event:other",
+     "score": 40,
+     "detail": "CreateDefaultVpc x6 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore x594"
+    }
+   ],
+   "score": 90,
+   "score_sum": 290,
+   "baseline": {
+    "n": 35450,
+    "hrs": 609,
+    "p95_hour": 3058.0,
+    "max_hour": 3058,
+    "ips": 448,
+    "denied": 6612
+   }
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "window": [
+  "2019-08-21 07:00:00",
+  "2019-08-21 08:00:00"
+ ],
+ "baseline": [
+  "2019-05-23 07:00:00",
+  "2019-08-21 07:00:00"
+ ],
+ "funnel": {
+  "window_events": 15726,
+  "baseline_events": 114020,
+  "window_actors": 3,
+  "actors_with_signal": 2,
+  "candidates_sent": 2
+ },
+ "candidates": [
+  {
+   "actor": "arn:aws:iam::811596193553:user/backup",
+   "id_type": "IAMUser",
+   "n": 7932,
+   "hrs": 1,
+   "max_hour": 7932,
+   "ips": 1,
+   "regions": 11,
+   "events": 12,
+   "denied": 2140,
+   "ok": 134,
+   "first": "2019-08-21 07:41:24",
+   "last": "2019-08-21 07:59:59",
+   "first_seen": {
+    "event": [
+     {
+      "value": "CreateDefaultVpc",
+      "count": 44,
+      "first": "2019-08-21 07:41:30"
+     },
+     {
+      "value": "DeleteAccessKey",
+      "count": 2,
+      "first": "2019-08-21 07:41:26"
+     },
+     {
+      "value": "CreateUser",
+      "count": 2,
+      "first": "2019-08-21 07:41:26"
+     }
+    ],
+    "ip": [
+     {
+      "value": "5.205.62.253",
+      "count": 7932,
+      "first": "2019-08-21 07:41:24"
+     }
+    ],
+    "user_agent": [
+     {
+      "value": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201",
+      "count": 7930,
+      "first": "2019-08-21 07:41:24"
+     },
+     {
+      "value": "[Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201]",
+      "count": 2,
+      "first": "2019-08-21 07:45:14"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "DeleteAccessKey x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "CreateUser x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "5.205.62.253 x7932"
+    },
+    {
+     "type": "first_seen_event:other",
+     "score": 40,
+     "detail": "CreateDefaultVpc x44 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore x7930"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "[Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocor x2"
+    }
+   ],
+   "score": 90,
+   "score_sum": 315,
+   "baseline": {
+    "n": 35452,
+    "hrs": 609,
+    "p95_hour": 3058.0,
+    "max_hour": 3058,
+    "ips": 448,
+    "denied": 6612
+   }
+  },
+  {
+   "actor": "arn:aws:iam::811596193553:user/Level6",
+   "id_type": "IAMUser",
+   "n": 7792,
+   "hrs": 1,
+   "max_hour": 7792,
+   "ips": 1,
+   "regions": 12,
+   "events": 12,
+   "denied": 2162,
+   "ok": 136,
+   "first": "2019-08-21 07:41:17",
+   "last": "2019-08-21 07:59:59",
+   "first_seen": {
+    "event": [
+     {
+      "value": "CreateDefaultVpc",
+      "count": 52,
+      "first": "2019-08-21 07:41:25"
+     },
+     {
+      "value": "DeleteAccessKey",
+      "count": 2,
+      "first": "2019-08-21 07:41:22"
+     },
+     {
+      "value": "CreateUser",
+      "count": 2,
+      "first": "2019-08-21 07:41:22"
+     }
+    ],
+    "ip": [
+     {
+      "value": "5.205.62.253",
+      "count": 7792,
+      "first": "2019-08-21 07:41:17"
+     }
+    ],
+    "user_agent": [
+     {
+      "value": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201",
+      "count": 7790,
+      "first": "2019-08-21 07:41:17"
+     },
+     {
+      "value": "[Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore/1.12.201]",
+      "count": 2,
+      "first": "2019-08-21 07:44:57"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "DeleteAccessKey x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_event:high",
+     "score": 90,
+     "detail": "CreateUser x2 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "5.205.62.253 x7792"
+    },
+    {
+     "type": "first_seen_event:other",
+     "score": 40,
+     "detail": "CreateDefaultVpc x52 (never seen for this actor)"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocore x7790"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "[Boto3/1.9.201 Python/2.7.12 Linux/4.4.0-157-generic Botocor x2"
+    }
+   ],
+   "score": 90,
+   "score_sum": 315,
+   "baseline": {
+    "n": 71096,
+    "hrs": 307,
+    "p95_hour": 8412.0,
+    "max_hour": 8412,
+    "ips": 191,
+    "denied": 18354
+   }
+  }
+ ]
+}

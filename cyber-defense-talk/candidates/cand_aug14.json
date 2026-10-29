@@ -1,0 +1,241 @@
+{
+ "window": [
+  "2019-08-14 00:00:00",
+  "2019-08-15 00:00:00"
+ ],
+ "baseline": [
+  "2019-05-16 00:00:00",
+  "2019-08-14 00:00:00"
+ ],
+ "funnel": {
+  "window_events": 308,
+  "baseline_events": 108116,
+  "window_actors": 4,
+  "actors_with_signal": 3,
+  "candidates_sent": 3
+ },
+ "candidates": [
+  {
+   "actor": "arn:aws:iam::811596193553:user/backup",
+   "id_type": "IAMUser",
+   "n": 208,
+   "hrs": 4,
+   "max_hour": 198,
+   "ips": 5,
+   "regions": 3,
+   "events": 4,
+   "denied": 2,
+   "ok": 206,
+   "first": "2019-08-14 02:01:34",
+   "last": "2019-08-14 14:08:16",
+   "first_seen": {
+    "ip": [
+     {
+      "value": "231.7.126.253",
+      "count": 58,
+      "first": "2019-08-14 09:27:59"
+     },
+     {
+      "value": "156.156.76.4",
+      "count": 6,
+      "first": "2019-08-14 02:01:34"
+     },
+     {
+      "value": "129.5.8.15",
+      "count": 2,
+      "first": "2019-08-14 14:08:16"
+     }
+    ],
+    "user_agent": [
+     {
+      "value": "aws-cli/1.16.116 Python/2.7.15+ Linux/5.0.0-23-generic botocore/1.12.106",
+      "count": 56,
+      "first": "2019-08-14 09:47:42"
+     },
+     {
+      "value": "aws-cli/1.16.158 Python/3.6.0 Windows/10 botocore/1.12.148",
+      "count": 4,
+      "first": "2019-08-14 02:04:51"
+     },
+     {
+      "value": "[aws-cli/1.16.158 Python/3.6.0 Windows/10 botocore/1.12.148]",
+      "count": 2,
+      "first": "2019-08-14 02:01:34"
+     },
+     {
+      "value": "[aws-cli/1.16.217 Python/3.7.2 Windows/10 botocore/1.12.207]",
+      "count": 2,
+      "first": "2019-08-14 14:08:16"
+     },
+     {
+      "value": "[aws-cli/1.16.116 Python/2.7.15+ Linux/5.0.0-23-generic botocore/1.12.106]",
+      "count": 2,
+      "first": "2019-08-14 09:27:59"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "231.7.126.253 x58"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "156.156.76.4 x6"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "129.5.8.15 x2"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "aws-cli/1.16.116 Python/2.7.15+ Linux/5.0.0-23-generic botoc x56"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "aws-cli/1.16.158 Python/3.6.0 Windows/10 botocore/1.12.148 x4"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "[aws-cli/1.16.158 Python/3.6.0 Windows/10 botocore/1.12.148] x2"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "[aws-cli/1.16.217 Python/3.7.2 Windows/10 botocore/1.12.207] x2"
+    },
+    {
+     "type": "first_seen_user_agent",
+     "score": 25,
+     "detail": "[aws-cli/1.16.116 Python/2.7.15+ Linux/5.0.0-23-generic boto x2"
+    }
+   ],
+   "score": 45,
+   "score_sum": 260,
+   "baseline": {
+    "n": 33438,
+    "hrs": 602,
+    "p95_hour": 3058.0,
+    "max_hour": 3058,
+    "ips": 455,
+    "denied": 5376
+   }
+  },
+  {
+   "actor": "arn:aws:sts::811596193553:assumed-role/Level6/Level6",
+   "id_type": "AssumedRole",
+   "n": 8,
+   "hrs": 4,
+   "max_hour": 2,
+   "ips": 4,
+   "regions": 1,
+   "events": 1,
+   "denied": 0,
+   "ok": 8,
+   "first": "2019-08-14 12:57:55",
+   "last": "2019-08-14 21:35:15",
+   "first_seen": {
+    "ip": [
+     {
+      "value": "165.175.253.255",
+      "count": 2,
+      "first": "2019-08-14 12:57:55"
+     },
+     {
+      "value": "251.139.251.245",
+      "count": 2,
+      "first": "2019-08-14 21:35:15"
+     },
+     {
+      "value": "58.243.1.251",
+      "count": 2,
+      "first": "2019-08-14 19:41:03"
+     },
+     {
+      "value": "1.251.242.24",
+      "count": 2,
+      "first": "2019-08-14 13:12:42"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "165.175.253.255 x2"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "251.139.251.245 x2"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "58.243.1.251 x2"
+    },
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "1.251.242.24 x2"
+    }
+   ],
+   "score": 45,
+   "score_sum": 180,
+   "baseline": {
+    "n": 630,
+    "hrs": 283,
+    "p95_hour": 4.0,
+    "max_hour": 6,
+    "ips": 315,
+    "denied": 0
+   }
+  },
+  {
+   "actor": "arn:aws:iam::811596193553:user/Level6",
+   "id_type": "IAMUser",
+   "n": 16,
+   "hrs": 2,
+   "max_hour": 14,
+   "ips": 1,
+   "regions": 1,
+   "events": 3,
+   "denied": 0,
+   "ok": 16,
+   "first": "2019-08-14 04:44:24",
+   "last": "2019-08-14 06:35:44",
+   "first_seen": {
+    "ip": [
+     {
+      "value": "255.4.226.241",
+      "count": 16,
+      "first": "2019-08-14 04:44:24"
+     }
+    ]
+   },
+   "signals": [
+    {
+     "type": "first_seen_ip",
+     "score": 45,
+     "detail": "255.4.226.241 x16"
+    }
+   ],
+   "score": 45,
+   "score_sum": 45,
+   "baseline": {
+    "n": 67264,
+    "hrs": 308,
+    "p95_hour": 8412.0,
+    "max_hour": 8412,
+    "ips": 177,
+    "denied": 17508
+   }
+  }
+ ]
+}
