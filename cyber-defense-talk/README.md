@@ -1,7 +1,5 @@
 # Proactive Cyber defense with AI Agents — worked example
 
-Code and transcripts behind the talk deck (Slides artifact: https://claude.ai/artifact/Y4t1zhRJUN2HP8q5o2rYLu).
-
 ## Reproduce
 
 ```bash
